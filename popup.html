@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <title>Browser Session Saver</title>
+
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+
+  <body>
+    <main class="app">
+      <header class="app-header">
+        <h1>Session Saver</h1>
+
+        <p class="subtitle">
+          Save and restore your current browser workspace.
+        </p>
+      </header>
+
+      <section class="save-section">
+        <label for="session-name">
+          Session name
+        </label>
+
+        <input
+          id="session-name"
+          type="text"
+          placeholder="e.g. LA Planning"
+          maxlength="80"
+          autocomplete="off"
+        />
+
+        <button
+          id="save-session"
+          class="primary-button"
+          type="button"
+        >
+          Save Current Window
+        </button>
+
+        <p
+          id="status-message"
+          class="status-message"
+          aria-live="polite"
+        ></p>
+      </section>
+
+      <section class="sessions-section">
+        <div class="section-header">
+          <h2>Saved Sessions</h2>
+        </div>
+
+        <div id="sessions-list">
+          <p class="empty-state">
+            No saved sessions yet.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Browser Session Saver",
+  "version": "0.3.0",
+  "description": "Save and restore named Chrome browsing sessions.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Browser Session Saver",
+    "default_popup": "popup.html"
+  }
+}

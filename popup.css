@@ -1,0 +1,280 @@
+:root {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: #1f2937;
+  background: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 360px;
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  padding: 18px;
+}
+
+.app-header {
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.save-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.save-section label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#session-name {
+  width: 100%;
+  padding: 9px 10px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  outline: none;
+}
+
+#session-name:focus {
+  border-color: #6b7280;
+}
+
+.primary-button {
+  padding: 9px 12px;
+
+  border: none;
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.primary-button:hover {
+  opacity: 0.85;
+}
+
+.status-message {
+  min-height: 18px;
+  margin: 0;
+
+  color: #4b5563;
+  font-size: 12px;
+}
+
+.sessions-section {
+  margin-top: 20px;
+}
+
+.section-header h2 {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.session-card {
+  padding: 12px 0;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.session-name {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.session-meta {
+  margin: 4px 0 8px;
+
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.session-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.session-actions button {
+  padding: 5px 9px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+
+  background: transparent;
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+.session-actions button:hover {
+  background: #f3f4f6;
+}
+
+.empty-state {
+  color: #9ca3af;
+  font-size: 13px;
+}
+.session-details {
+  margin: 10px 0;
+}
+
+.session-details summary {
+  color: #4b5563;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.session-details summary:hover {
+  color: #111827;
+}
+
+.saved-tabs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin: 10px 0 4px;
+  padding-left: 22px;
+}
+
+.saved-tab {
+  padding-left: 2px;
+}
+
+.saved-tab-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.saved-tab-title {
+  min-width: 0;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.saved-tab-host {
+  margin-top: 2px;
+
+  color: #9ca3af;
+  font-size: 11px;
+}
+
+.saved-tab-badges {
+  display: flex;
+  flex-shrink: 0;
+  gap: 4px;
+}
+
+.tab-badge {
+  padding: 1px 5px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+
+  color: #6b7280;
+  font-size: 9px;
+  line-height: 1.4;
+}
+.session-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.session-actions button {
+  padding: 5px 9px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+.session-actions button:hover {
+  background: #f3f4f6;
+}
+
+.session-actions .primary-action {
+  font-weight: 600;
+}
+
+.session-actions .danger-action {
+  color: #991b1b;
+}
+
+.saved-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+
+  padding-left: 2px;
+}
+
+.saved-tab-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.open-tab-button {
+  flex-shrink: 0;
+
+  padding: 4px 7px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 10px;
+}
+
+.open-tab-button:hover {
+  background: #f3f4f6;
+}
